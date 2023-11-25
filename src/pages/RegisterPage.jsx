@@ -71,7 +71,7 @@ const Wrapper = styled.section`
     align-items: center;
     justify-content: center;
     height: 80vh;
-    width: 35%;
+    width: 40%;
     margin: 0 auto;
     background-color: #fff;
     padding: 30px 20px;

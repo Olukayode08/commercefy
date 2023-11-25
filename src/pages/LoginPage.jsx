@@ -29,6 +29,7 @@ const LoginPage = () => {
               <input
                 className='otp-input'
                 type='text'
+                inputmode='numeric'
                 required
                 id='otp'
                 placeholder='OTP'
@@ -82,7 +83,7 @@ const Wrapper = styled.section`
     display: flex;
     flex-direction: column;
     height: 80vh;
-    width: 35%;
+    width: 40%;
     margin: auto;
     background-color: #fff;
     padding: 30px 20px;

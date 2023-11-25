@@ -15,7 +15,7 @@ const Hero = () => {
               </h1>
               <p>Effortless Invoicing and Seamless Payments</p>
             </div>
-            <NavLink to='/sign-in' className='link'>Start Exploring</NavLink>
+            <NavLink to='/sign-up' className='link'>Start Exploring</NavLink>
           </div>
         </div>
       </Wrapper>
@@ -50,7 +50,6 @@ const Wrapper = styled.section`
     text-align: center;
   }
   .content-heading {
-    background-color: #fff;
     padding: 20px;
     margin-bottom: 80px;
   }
