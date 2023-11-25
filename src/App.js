@@ -1,20 +1,19 @@
-import Hero from "./components/Hero";
-import Navbar from "./components/Navbar";
-import SectionFour from "./components/SectionFour";
-import SectionThree from "./components/SectionThree";
-import SectionTwo from "./components/SectionTwo";
-
+import { Routes, Route } from 'react-router-dom'
+import Navbar from './components/Navbar'
+import HomePage from './pages/HomePage'
+import LoginPage from './pages/LoginPage'
+import RegisterPage from './pages/RegisterPage'
 function App() {
   return (
     <>
-    <Navbar />
-    <Hero />
-    <SectionTwo />
-    <SectionThree />
-    <SectionFour />
+      <Navbar />
+      <Routes>
+        <Route path='/' element={<HomePage />} />
+        <Route path='/sign-in' element={<LoginPage />} />
+        <Route path='/sign-up' element={<RegisterPage />} />
+      </Routes>
     </>
-
-  );
+  )
 }
 
-export default App;
+export default App

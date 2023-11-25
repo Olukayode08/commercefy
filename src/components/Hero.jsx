@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import bg from '../assets/man.png'
+import { NavLink } from 'react-router-dom'
 const Hero = () => {
   return (
     <>
@@ -14,7 +15,7 @@ const Hero = () => {
               </h1>
               <p>Effortless Invoicing and Seamless Payments</p>
             </div>
-            <h5>Start Exploring</h5>
+            <NavLink to='/sign-in' className='link'>Start Exploring</NavLink>
           </div>
         </div>
       </Wrapper>
@@ -25,7 +26,7 @@ const Wrapper = styled.section`
   .bg-image {
     position: relative;
     width: 100%;
-    height: 90vh;
+    height: 600px;
     background-image: url(${bg});
     background-size: cover;
     background-repeat: no-repeat;
@@ -43,7 +44,7 @@ const Wrapper = styled.section`
   }
   .content {
     position: absolute;
-    top: 60%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -65,14 +66,19 @@ const Wrapper = styled.section`
     font-size: 18px;
     color: #252525;
   }
-  h5 {
+  .link {
     padding: 10px 0;
     background-color: #fff;
-    max-width: 170px;
+    width: 200px;
     font-size: 17px;
     color: #252525;
     margin: 0 auto;
     cursor: pointer;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
   }
   @media screen and (max-width: 700px) {
     .content {

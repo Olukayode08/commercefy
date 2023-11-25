@@ -53,6 +53,9 @@ const Wrapper = styled.section`
     img {
       width: 80%;
     }
+    br{
+      display: none;
+    }
   }
 `
 export default SectionThree

@@ -48,7 +48,7 @@ const Wrapper = styled.section`
   .bgimage {
     position: relative;
     width: 100%;
-    height: 100vh;
+    height: 800px;
     background-image: url(${bg});
     background-size: cover;
     background-repeat: no-repeat;
@@ -142,7 +142,7 @@ const Wrapper = styled.section`
   }
   @media screen and (max-width: 370px) {
   .user {
-    width: 250px;
+    width: 300px;
   }
 
   }

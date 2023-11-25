@@ -1,4 +1,5 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 import styled from 'styled-components'
 
 const SectionFour = () => {
@@ -38,7 +39,7 @@ const SectionFour = () => {
           <h4>Start Now</h4>
           <div className='get-started'>
             <h1>Get started for free now!</h1>
-            <h5>Register</h5>
+            <NavLink className='link' to='/sign-up'>Register</NavLink>
           </div>
         </div>
       </Wrapper>
@@ -58,6 +59,7 @@ const Wrapper = styled.section`
     font-style: normal;
     font-weight: 600;
     line-height: 40px;
+    text-align: center;
   }
   .how-it-works {
     display: flex;
@@ -119,7 +121,7 @@ const Wrapper = styled.section`
     width: 100%;
     background: rgba(255, 216, 228, 0.3);
   }
-  h5 {
+  .link {
     display: flex;
     width: 250px;
     height: 52px;
@@ -128,6 +130,8 @@ const Wrapper = styled.section`
     align-items: center;
     border-radius: 8px;
     background: #4f378b;
+    text-decoration: none;
+    cursor: pointer;
     margin-top: 45px;
     color: #fff;
     font-size: 18px;
@@ -145,6 +149,15 @@ const Wrapper = styled.section`
     h5 {
       font-size: 16px;
     }
+  }
+  @media screen and (max-width: 400px) {
+  .steps {
+    width: 300px;
+    margin: 20px 0;
+  }
+  .start{
+    margin: 20px 0;
+  }
   }
 `
 export default SectionFour
