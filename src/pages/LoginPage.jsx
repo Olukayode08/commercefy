@@ -3,13 +3,13 @@ import { NavLink } from 'react-router-dom'
 import styled from 'styled-components'
 
 const LoginPage = () => {
-    const [email, setEmail] = useState('')
-    const [otp, setOtp] = useState('')
-    const [password, setPassword] = useState('')
+  const [email, setEmail] = useState('')
+  const [otp, setOtp] = useState('')
+  const [password, setPassword] = useState('')
 
-    const submitForm = (e)=>{
-        e.preventDefault()
-    }
+  const submitForm = (e) => {
+    e.preventDefault()
+  }
   return (
     <>
       <Wrapper>
@@ -189,6 +189,12 @@ const Wrapper = styled.section`
     }
     p {
       width: 250px;
+    }
+    .login-page {
+      height: 120vh;
+    }
+    form {
+      height: 100vh;
     }
   }
   @media screen and (max-width: 370px) {

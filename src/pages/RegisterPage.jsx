@@ -145,6 +145,12 @@ const Wrapper = styled.section`
     p {
       width: 250px;
     }
+    .register-page{
+      height: 120vh;
+    }
+    form {
+      height: 100vh;
+    }
   }
   @media screen and (max-width: 370px) {
     input {
