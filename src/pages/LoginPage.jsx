@@ -84,7 +84,9 @@ const Wrapper = styled.section`
     flex-direction: column;
     height: 80vh;
     width: 40%;
-    margin: auto;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
     background-color: #fff;
     padding: 30px 20px;
   }
@@ -129,7 +131,6 @@ const Wrapper = styled.section`
     width: 20px;
     height: 20px;
     margin-right: 20px;
-
   }
   h5 {
     font-weight: 300;
@@ -173,14 +174,49 @@ const Wrapper = styled.section`
     }
   }
   @media screen and (max-width: 450px) {
+    .input,
     input {
       width: 300px;
+    }
+    .otp-input {
+      width: 180px;
+    }
+    .get-otp {
+      width: 120px;
     }
     button {
       width: 310px;
     }
     p {
       width: 250px;
+    }
+  }
+  @media screen and (max-width: 370px) {
+    .input,
+    input {
+      width: 280px;
+    }
+    .otp-input {
+      width: 180px;
+    }
+    .get-otp {
+      width: 100px;
+    }
+    .links {
+      width: 280px;
+    }
+    button {
+      width: 290px;
+    }
+    h1 {
+      font-size: 22px;
+    }
+  }
+
+  @media screen and (max-width: 320px) {
+    form {
+      height: 100vh;
+      width: 100%;
     }
   }
 `

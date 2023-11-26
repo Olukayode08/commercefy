@@ -65,6 +65,9 @@ const Wrapper = styled.section`
     align-items: center;
     justify-content: center;
   }
+  h1 {
+    text-align: center;
+  }
   form {
     display: flex;
     flex-direction: column;
@@ -134,11 +137,29 @@ const Wrapper = styled.section`
     input {
       width: 300px;
     }
-    button {
+    .links {
       width: 310px;
     }
     p {
       width: 250px;
+    }
+  }
+  @media screen and (max-width: 370px) {
+    input {
+      width: 280px;
+    }
+    .links {
+      width: 280px;
+    }
+    h1 {
+      font-size: 22px;
+    }
+  }
+
+  @media screen and (max-width: 320px) {
+    form {
+      height: 120vh;
+      width: 100%;
     }
   }
 `
