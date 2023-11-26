@@ -46,7 +46,9 @@ const RegisterPage = () => {
             By signing up, you confirm that you’ve read and accepted our Term of
             use and Privacy Policy
           </p>
-          <Link className='links' to='/verify-acc'>Register</Link>
+          <button>
+              Register
+          </button>
           <NavLink to='/sign-in' className='link'>
             Already have an account? Log in
           </NavLink>
@@ -102,7 +104,7 @@ const Wrapper = styled.section`
   .link {
     text-decoration: none;
   }
-  .links {
+  button {
     width: 410px;
     height: 58px;
     background-color: #4f378b;
@@ -137,7 +139,7 @@ const Wrapper = styled.section`
     input {
       width: 300px;
     }
-    .links {
+    button {
       width: 310px;
     }
     p {
@@ -148,7 +150,7 @@ const Wrapper = styled.section`
     input {
       width: 280px;
     }
-    .links {
+    button {
       width: 280px;
     }
     h1 {
